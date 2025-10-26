@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense View</title>
+    <style>
+        .data {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .data th, .data td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .data th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Expense Data</h2>
+    {% for table in tables %}
+        {{ table|safe }}
+    {% endfor %}
+</body>
+</html>
